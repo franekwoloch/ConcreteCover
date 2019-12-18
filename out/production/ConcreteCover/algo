@@ -1,0 +1,36 @@
+//Input data
+carbon = {0, XC1, XC2, XC3, XC4}
+chlor={0, XD1, XD2, XD3}
+chlors={0, XS1, XS2. XS3}
+frozen={0, XF1, XF2, XF3, XF4}
+chemic={0, XA1, XA2, XA3}
+class={S1, S2, S3, S4, S5, S6}
+
+d //śrenidca pręta
+dg //nominalny maksymany wymiar ziaren kruszywa
+
+
+cMin //otulenie minimalne
+cMinB // otulenie minimalne ze względu na przyczepność, pkt. 4.4.1.2(3)
+cMinDur //otulenie minimalne ze względu na warunki środowiska, pkt. 4.4.1.2(5)
+deltaCdurGamma //składnik dodawany z uwagi na bezpieczeństwo, pkt. 4.4.1.2(6)
+deltaCdurSt //zmniejszenie z uwagi na zastosowanie stali nierdzewnej, pkt. 4.4.1.2(7)
+deltaCdurAdd // zmniejszenie z uwagi na stosowanie dodatkowego zabezpieczenia, pkt. 4.4.1.2(8)
+
+cNom=cMin+deltaCdev
+
+cMin=max{cMinB; cMinDur+deltaCdurGamma-deltaCdurSt-deltaCdurAdd; 10}
+
+cMinB=d;
+if dg>32 {cMinB+=5}
+
+C8/10
+C12/15
+C16/20
+C20/25
+C25/30
+C30/37
+C35/45
+C40/50
+C45/55
+C50/60
